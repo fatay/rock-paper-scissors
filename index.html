@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body{
+            background: purple;
+        }
+
+        .general{
+            display:block;
+            list-style-type: none;
+            margin: 0%;
+            margin-left: 20px;
+        }
+
+        .bu {
+            float:left;
+        }
+
+        .select{
+            float:right;
+            margin-top: -300px;
+        }
+
+        .active{
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .jumbotron{
+            opacity: .5;
+        }
+
+        h1{
+            color:white;
+        }
+    </style>
+</head>
+<body>
+<br><br>
+
+<div class="jumbotron">
+<h2>TAŞ KAĞIT MAKAS</h2>
+</div>
+
+<div id="msg"></div>
+
+    <div class="general">
+        <a href="#" ><img id="rock" class="active" src="rock.png"     alt=""></a>
+        <a href="#" ><img id="paper" class="" src="paper.png"    alt=""></a>
+        <a href="#" ><img id="scissor" class="" src="scissors.png" alt=""></a>
+    </div><br>
+
+    <div style="margin-left:340px;">
+        <button style="margin-left:20px;" type="button" class="btn btn-light" id="myBtn">DENE BAKALIM</button>
+    </div>
+
+    <div class="select">
+        <img id="selector" src=""></img>
+    </div><br><br>
+
+    <div style="margin-left:310px;">
+        <h1 id="sonuc"></h1>
+    </div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>
